@@ -39,6 +39,6 @@ Caio Vinicius Magro - 081200042
 
 Giovana Moreira da Silva - 081200043
 
-Matheus Novais de Souza - 081190048
+Matheus de Novais Souza - 081190048
 
 Ysabela Akiyama Molero Rodrigues - 081200044
