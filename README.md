@@ -1,22 +1,29 @@
 # UDP_RSA
-Este repositório contem os scripts Client e Server utilizados para realizar um teste de interceptação de mensagens criptografadas com a Criptografia de Substituição Polialfabética de Vigenère.
+Este repositório contem os scripts Client e Server utilizados para realizar um teste de interceptação de mensagens criptografadas com a criptografia RSA.
 
-# Criptografia de Substituição Polialfabética de Vigenère
+# Criptografia RSA
 
-A criptografia de substituição polialfabética de Vigenère é uma técnica de criptografia clássica inventada por Blaise de Vigenère no século XVI. Ela é uma extensão da cifra de substituição simples e é um dos primeiros exemplos de criptografia polialfabética.
+A criptografia RSA é um dos algoritmos de criptografia de chave pública mais amplamente utilizados. Ela foi inventada por Ron Rivest, Adi Shamir e Leonard Adleman em 1977 e é amplamente empregada para garantir a confidencialidade e a autenticidade de comunicações digitais.
 
 ## Como Funciona
 
-1. Escolha uma chave, geralmente uma palavra ou frase curta.
-2. Repita ou estenda a chave para corresponder ao comprimento do texto original.
-3. Desloque cada letra do texto original de acordo com a posição da letra correspondente na chave.
-4. O resultado é o texto cifrado.
+1. Chave Pública e Chave Privada:
+   - Cada pessoa ou entidade possui duas chaves: uma pública e uma privada.
+   - A chave pública é usada para criptografar mensagens.
+   - A chave privada é usada para descriptografar mensagens.
 
-## Vantagens e Limitações
+2. Criptografia:
+   - O remetente usa a chave pública do destinatário para criptografar a mensagem.
+   - A mensagem criptografada é enviada ao destinatário.
 
-- A cifra de Vigenère é mais resistente à análise de frequência do que a cifra de substituição simples.
-- A segurança depende do comprimento e da qualidade da chave.
-- Não é considerada segura para uso moderno, pois pode ser quebrada com facilidade por métodos criptoanalíticos avançados.
+3. Descriptografia:
+   - O destinatário usa sua chave privada para descriptografar a mensagem e ler o conteúdo original.
+
+## Segurança e Utilização
+
+- A segurança do RSA baseia-se na dificuldade de fatorar grandes números primos.
+- É amplamente utilizado em comunicações seguras na Internet, como HTTPS.
+- Também é usado para assinaturas digitais, autenticação e segurança de dados.
 
 Para o teste realizado pelo grupo foi utilizada uma chave de 4096 bits.
 ### Funcionamento dos scripts
@@ -26,6 +33,7 @@ Importamos a classe nos scripts Simple_udpClient.py e Simple_udpServer.py e real
 
 ## Video de demonstração do teste
 [Youtube |Demonstração criptografia RSA em web socket com captura no Wireshark](https://youtu.be/krKSIm_YvRA)
+
 ## Grupo
 Caio Vinicius Magro - 081200042
 
